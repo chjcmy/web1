@@ -1,0 +1,240 @@
+@import "./reset.css";
+
+* {
+    box-sizing: border-box;
+}
+
+#app {
+    max-width: 1920px;
+    margin: 30px auto;
+    padding: 0 4%;
+}
+
+h2 {
+    font-size: 150%;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+a { text-decoration: none; color: grey; }
+
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.main-nav li a {
+    display: block;
+    padding: 10px;
+}
+
+.main-nav a {
+    color: #432;
+}
+
+.logo {
+    width: 20%;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    font-family: neodgm_pro;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+    margin-bottom: 20px;
+}
+
+.news-contents {
+    display: flex;
+    font-family: neodgm_pro;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+article {
+    width: 80%;
+}
+
+aside {
+    width: 20%;
+    margin: 4% 0% 0% 5%;
+}
+
+.home-nav {
+    flex-direction: row;
+
+}
+
+.home-nav li {
+    text-align: center;
+    list-style: none;
+    overflow: hidden;
+    float: left;
+}
+
+.gif-contain {
+    width: 700px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.find-block {
+    height: 70%;
+    margin-bottom: 5%;
+    flex-direction: row;
+}
+
+.find-block h1 {
+    margin-bottom: 20px;
+}
+
+.find-menu {
+    float: right;
+    margin-bottom: 2%;
+    vertical-align: bottom;
+}
+
+.find-menu div {
+    float: right;
+}
+
+.find-block {
+    margin-bottom: 15px;
+}
+
+.find-block select {
+    width: 32%;
+    height: 40px;
+    margin-right: 20px;
+    font-size: 100%;
+    color: #999;
+    font-family: neodgm_pro;
+    border: 2px solid #ddd;
+}
+
+.find-block input {
+    width: 35%;
+    height: 40px;
+    font-size: 100%;
+    margin-right: 20px;
+    color: #999;
+    font-family: neodgm_pro;
+    border: 2px solid #ddd;
+}
+
+.find-block button {
+    width: 20%;
+    height: 40px;
+    font-size: 20px;
+    color: #999;
+    font-family: neodgm_pro;
+    vertical-align: bottom;
+    border: 2px solid #ddd;
+}
+
+.find-table button {
+    width: 50%;
+    height: 40px;
+    font-size: 70%;
+    color: #999;
+    font-family: neodgm_pro;
+    vertical-align: bottom;
+    border: 2px solid #ddd;
+}
+
+.find-table {
+    margin-top: 10%;
+    width: 90%;
+    border: 1px solid;
+    font-size: 20px;
+}
+
+.find-table th {
+    color: #168;
+    background: #f0f6f9;
+}
+
+.find-table th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.find-table th:first-child, .find-table td:first-child {
+    width: 20%;
+}
+
+.alone {
+    float: right;
+    margin: 1% 10% 0% 0%;
+    width: 15%;
+    height: 40px;
+    font-size: 70%;
+    color: #999;
+    font-family: neodgm_pro;
+    border: 2px solid #ddd;
+}
+
+.tb-1 {
+    width: 20%
+}
+
+.tb-2 {
+    width: 40%
+}
+
+.tb-3 {
+    width: 20%
+}
+
+.tb-4 {
+    width: 30%
+}
+
+.side-nav .main-nav {
+    flex-direction: column;
+
+}
+
+.front-Box {
+    width: 90%;
+    height: 90%;
+}
+
+
+.find-h2 {
+    font-size: 150%;
+    margin-bottom: 0%;
+}
+
+.front-table {
+    width: 20%;
+    height: 50%;
+    margin: 0% 0% 0% 0%;
+}
+
+.select-Button button{
+    width: 8%;
+    height: 20%;
+    float: right;
+    font-size: 20%;
+    color: #999;
+    font-family: neodgm_pro;
+    vertical-align: bottom;
+    border: 2px solid #ddd;
+}
+
+.select-modify{
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+/*-----margin-------*/
+
+.margin-top-10 {
+    margin-top: 10%;
+}
