@@ -29,7 +29,7 @@ function App() {
             exact
             render={() => <div>유저를 선택해주세요.</div>}
           />
-          <Route path="/find/:name" component={FindTitle} name={alone} />
+          <Route path="/find/:name" component={FindTitle} />
           <Route path="/read/:url" component={ReadContent} />
           <Route path="/make" component={MakePage} />
           <Route path="/modify" component={ModiFiPage} />

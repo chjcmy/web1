@@ -68,6 +68,7 @@ const ModiFiPage = (id) => {
     <div>
       {/* eslint-disable-next-line no-unused-vars */}
       {readList.map((val) => (
+        // eslint-disable-next-line react/jsx-key
         <div>
           <input type="hidden" />
           <h1>주제</h1>
