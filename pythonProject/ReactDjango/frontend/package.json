@@ -7,6 +7,12 @@
     "dev": "webpack --mode development --watch",
     "build": "webpack --mode production"
   },
+   "eslintConfig": {
+    "extends": [
+      "airbnb-base/legacy"
+    ]
+  },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
