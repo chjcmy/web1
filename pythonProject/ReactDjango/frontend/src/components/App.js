@@ -1,17 +1,12 @@
-// eslint-disable-next-line no-unused-vars,import/no-extraneous-dependencies
 import React, { useState } from 'react';
 import '../../static/css/App.css';
-// eslint-disable-next-line no-unused-vars
 import { Route } from 'react-router-dom';
 import HomePage from './HomePage';
-// eslint-disable-next-line no-unused-vars
 import FrontHeader from './FrontHeader';
-// eslint-disable-next-line no-unused-vars
 import FindTitle from './FindTitle';
 import ReadContent from './ReadContent';
 import MakePage from './MakePage';
 import ModiFiPage from './modifiPage';
-// eslint-disable-next-line no-unused-vars
 import SHOWSIDE from './showside';
 
 function App() {

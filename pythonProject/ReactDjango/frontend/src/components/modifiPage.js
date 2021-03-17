@@ -1,21 +1,18 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import React, { useEffect, useState } from 'react';
 import '../../static/css/App.css';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import Axios from 'axios';
 import { useParams } from 'react-router';
 import queryString from 'query-string';
 
 const ModiFiPage = (id) => {
   const [readList, setReadList] = useState([]);
-  // eslint-disable-next-line no-unused-vars
   const { url } = useParams();
   const queryable = queryString.parse(id.location.pathname);
   const [modiFiVal, setModifival] = useState({
     pk: queryable['/modify/id'],
     subject: '',
     title: '',
-    content: '',
+    content: ''
   });
   console.log(queryable['/modify/id']);
 
@@ -24,8 +21,8 @@ const ModiFiPage = (id) => {
       'http://localhost:8000/api/ContentTypeRead',
       {
         params: {
-          id: queryable['/modify/id'],
-        },
+          id: queryable['/modify/id']
+        }
       },
     );
 
@@ -33,7 +30,7 @@ const ModiFiPage = (id) => {
       ...modiFiVal,
       subject: result.data[0].fields.subject,
       title: result.data[0].fields.title,
-      content: result.data[0].fields.content,
+      content: result.data[0].fields.content
     });
     setReadList(result.data);
   }, []);
@@ -43,7 +40,7 @@ const ModiFiPage = (id) => {
 
     const nextInputs = {
       ...modiFiVal,
-      [name]: value,
+      [name]: value
     };
     setModifival(nextInputs);
     console.log(modiFiVal);
@@ -55,8 +52,8 @@ const ModiFiPage = (id) => {
         pk: modiFiVal.pk,
         subject: modiFiVal.subject,
         title: modiFiVal.title,
-        content: modiFiVal.content,
-      },
+        content: modiFiVal.content
+      }
     }).then((response) => {
       if (response.data != null) {
         console.log('update');

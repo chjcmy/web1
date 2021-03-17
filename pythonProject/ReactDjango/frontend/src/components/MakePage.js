@@ -1,7 +1,5 @@
-// eslint-disable-next-line no-unused-vars,import/no-extraneous-dependencies
 import React, { useEffect, useState } from 'react';
 import '../../static/css/App.css';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import Axios from 'axios';
 
 function MakePage() {
@@ -20,7 +18,7 @@ function MakePage() {
   }, []);
   const [inputs, setInputs] = useState({
     title: '',
-    content: '',
+    content: ''
   });
 
   const { title, content } = inputs;
@@ -30,7 +28,7 @@ function MakePage() {
 
     const nextInputs = {
       ...inputs,
-      [name]: value,
+      [name]: value
     };
     setInputs(nextInputs);
   };
@@ -40,8 +38,8 @@ function MakePage() {
       data: {
         subject: select,
         title,
-        content,
-      },
+        content
+      }
     }).then((response) => {
       if (response.data != null) {
         console.log('insert');

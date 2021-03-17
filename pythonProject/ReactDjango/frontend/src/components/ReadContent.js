@@ -1,9 +1,7 @@
-// eslint-disable-next-line import/no-extraneous-dependencies,no-unused-vars
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
 import queryString from 'query-string';
 import '../../static/css/App.css';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import Axios from 'axios';
 
 const ReadContent = () => {
@@ -16,8 +14,8 @@ const ReadContent = () => {
       'http://localhost:8000/api/ContentTypeRead',
       {
         params: {
-          id: queryable.id,
-        },
+          id: queryable.id
+        }
       },
     );
     console.log(result.data);
@@ -27,7 +25,6 @@ const ReadContent = () => {
   return (
     <div>
       {readList.map((val) => (
-        // eslint-disable-next-line react/jsx-key
         <div>
           <h1>주제</h1>
           <div>{val.fields.subject}</div>

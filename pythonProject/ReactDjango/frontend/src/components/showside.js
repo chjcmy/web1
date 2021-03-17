@@ -1,11 +1,8 @@
-// eslint-disable-next-line no-unused-vars,import/no-extraneous-dependencies
 import React, {
   useState,
   useEffect,
-  useLayoutEffect,
-  // eslint-disable-next-line import/no-extraneous-dependencies
+  useLayoutEffect
 } from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import Axios from 'axios';
 import '../../static/css/App.css';
 import { Link } from 'react-router-dom';

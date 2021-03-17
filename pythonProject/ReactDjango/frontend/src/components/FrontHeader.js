@@ -1,6 +1,4 @@
-// eslint-disable-next-line import/no-extraneous-dependencies,no-unused-vars
 import React, { useState, useEffect } from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import Axios from 'axios';
 import '../../static/css/App.css';
 import { Link } from 'react-router-dom';
@@ -10,7 +8,6 @@ import { useSelector } from 'react-redux';
 function FrontHeader() {
   const [doList, setDoList] = useState([]);
 
-  // eslint-disable-next-line no-shadow
   const allActivities = useSelector((state) => state.activities);
 
   console.log(allActivities);

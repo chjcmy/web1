@@ -1,10 +1,7 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import React, { useEffect, useState } from 'react';
 import '../../static/css/App.css';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import Axios from 'axios';
 import { Link } from 'react-router-dom';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import Moment from 'react-moment';
 import Box from '@material-ui/core/Box';
 import { Img } from 'react-image';
@@ -12,7 +9,6 @@ import { Img } from 'react-image';
 const FindTitle = (props) => {
   const [doList, setDoList] = useState([]);
 
-  // eslint-disable-next-line react/prop-types
   console.log(props);
 
   const [titleList, setTitleList] = useState([]);

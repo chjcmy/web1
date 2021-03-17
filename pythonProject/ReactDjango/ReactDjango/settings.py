@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'api.apps.ApiConfig',
+    'corsheaders',
     'frontend.apps.FrontendConfig'
 ]
 
@@ -52,6 +53,8 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
@@ -75,6 +78,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'ReactDjango.wsgi.application'
 
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000',
+    'https://localhost:3000',
+    'http://127.0.0.1:8000',
+]
+
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
@@ -83,7 +92,7 @@ DATABASES = {
         'ENGINE': 'djongo',
         'NAME': 'API',
         'CLIENT': {
-            'host': '192.168.0.9',
+            'host': '192.168.0.4',
             'port': 27017,
             'authSource': 'admin',
         },
